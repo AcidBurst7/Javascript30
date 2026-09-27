@@ -1,0 +1,44 @@
+:root {
+	--gradient-bg-color-1: #2f6be5;
+	--gradient-bg-color-2: #d8a43e;
+	--gradient-bg-color-3: #e43b19;
+	--gradient-bg-color-4: #097f51;
+	--gradient-bg-deg: 90deg;
+	--image-color: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+	--h1-font-color: greenyellow;
+}
+
+body {
+	text-align: center;
+	background-image: conic-gradient(
+    var(--gradient-bg-color-1) var(--gradient-bg-deg),
+    var(--gradient-bg-color-2) var(--gradient-bg-deg) calc(var(--gradient-bg-deg) * 2),
+	var(--gradient-bg-color-3) calc(var(--gradient-bg-deg) * 2) calc(var(--gradient-bg-deg) * 3),
+    var(--gradient-bg-color-4) calc(var(--gradient-bg-deg) * 3)
+  );
+	color: white;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 100;
+	font-size: 24px;
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+.h1 {
+	color: var(--h1-font-color);
+}
+
+input {
+	width: 100px;
+}
+
+img {
+	padding: var(--spacing);
+	background: var(--image-color);
+	filter: blur(var(--blur));
+}
+
